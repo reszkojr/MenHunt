@@ -1,4 +1,4 @@
-package me.santres.menhunt.commands;
+package me.santres.menhunt;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

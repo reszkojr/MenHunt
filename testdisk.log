@@ -1,0 +1,48 @@
+
+
+Wed Jul 27 16:27:40 2022
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.15.0-41-generic (#44~20.04.1-Ubuntu SMP Fri Jun 24 13:27:29 UTC 2022) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, HPA, LBA48 support
+/dev/sda: size       468862128 sectors
+/dev/sda: user_max   468862128 sectors
+/dev/sda: native_max 468862128 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop0 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop1 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop2 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop3 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop4 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop5 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop6 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop7 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 240 GB / 223 GiB - CHS 29185 255 63, sector size=512 - CT240BX500SSD1, S/N:1925E18917E8, FW:M6CR013
+Disk /dev/sdc - 7736 MB / 7377 MiB - CHS 1023 238 62, sector size=512 - Kingston DataTraveler 3.0
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 240 GB / 223 GiB - CT240BX500SSD1
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=468862127 (expected 468862127)
+hdr_lba_start=34
+hdr_lba_end=468862094
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+ 1 P Linux filesys. data         2048  117190655  117188608
+ 2 P Linux filesys. data    117190656  467884031  350693376
+ 3 P EFI System             467886080  468852735     966656
+
+ 1 P Linux filesys. data         2048  117190655  117188608
+Support for this filesystem wasn't enabled during compilation.
+SIGINT detected! TestDisk has been killed.
