@@ -1,5 +1,6 @@
 package me.santres.menhunt.entities;
 
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 /*
@@ -11,24 +12,32 @@ import org.bukkit.entity.Player;
 
 public class Speedrunner {
     private static Speedrunner instance;
-    private Player player;
+    private Player speedrunner;
 
-    private Speedrunner(Player player) {
-        this.player = player;
+    private Speedrunner(Player speedrunner) {
+        this.speedrunner = speedrunner;
     }
 
     public static Speedrunner getInstance() {
         if (instance == null) {
             instance = new Speedrunner(null);
+
+            // Empty HunterList when altering speedrunner
+            HunterList.reset();
+            for (Player player : Bukkit.getOnlinePlayers()) {
+                if (player != Speedrunner.instance.get()) {
+                    HunterList.addHunter(player);
+                }
+            }
         }
         return instance;
     }
 
     public Player get() {
-        return player;
+        return speedrunner;
     }
 
     public void set(Player player) {
-        this.player = player;
+        this.speedrunner = player;
     }
 }
