@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MenHunt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MenHunt_jar</output-path>
+    <root id="archive" name="MenHunt.jar">
+      <element id="module-output" name="MenHunt" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Libs/spigot-1.16.5.jar" path-in-jar="/" />
+      <element id="library" level="project" name="bungeecord-chat-1.16-R0.4-javadoc" />
+    </root>
+  </artifact>
+</component>

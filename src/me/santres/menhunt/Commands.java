@@ -27,6 +27,7 @@ public class Commands implements CommandExecutor {
                         if (speedrunner.get() == speedrunnerCandidate) {
                             sender.sendMessage(ChatColor.AQUA + speedrunnerCandidate.getName() + " already is speedrunner!");
                         }
+                        PointerUpdater.startPointer();
                         speedrunner.set(speedrunnerCandidate);
                         sender.sendMessage(ChatColor.GREEN + speedrunnerCandidate.getName() + " is now speedrunner!");
                     }
@@ -35,6 +36,7 @@ public class Commands implements CommandExecutor {
                         if (speedrunner.get() == null) {
                             sender.sendMessage(ChatColor.RED + "No speedrunner was set yet!");
                         }
+                        PointerUpdater.cancelPointer();
                         sender.sendMessage(ChatColor.GREEN + speedrunnerCandidate.getName() +" is not speedrunner anymore.");
                         speedrunner.set(null);
                     }
