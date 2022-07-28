@@ -20,7 +20,7 @@ public class PointerCreator {
 
         Vector trajectory = targetVec.clone().subtract(hunterVec).normalize();
 
-        double yaw = Math.toDegrees(Math.atan(-trajectory.getX() / -trajectory.getZ()));
+        double yaw = Math.toDegrees(Math.atan(-trajectory.getX() / trajectory.getZ()));
 
         if (trajectory.getZ() < 0) {
             yaw += 180;

@@ -26,6 +26,11 @@ public class Commands implements CommandExecutor {
                     case "add" -> {
                         if (speedrunner.get() == speedrunnerCandidate) {
                             sender.sendMessage(ChatColor.AQUA + speedrunnerCandidate.getName() + " already is speedrunner!");
+                            return false;
+                        }
+                        if (Bukkit.getOnlinePlayers().size() == 1) {
+                            sender.sendMessage(ChatColor.RED + "Not enough players!");
+                            return false;
                         }
                         PointerUpdater.startPointer();
                         speedrunner.set(speedrunnerCandidate);
