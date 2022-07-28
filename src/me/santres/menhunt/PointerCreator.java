@@ -6,8 +6,8 @@ import org.bukkit.util.Vector;
 
 public class PointerCreator {
 
-    private final Location hunter;
-    private final Location target;
+    private Location hunter;
+    private Location target;
 
     public PointerCreator(Location hunter, Location target) {
         this.hunter = hunter;
@@ -85,5 +85,13 @@ public class PointerCreator {
         int distance = (int) hunter.distanceSquared(target);
 
         return colorDistance(distance) + text;
+    }
+
+    public void setHunter() {
+        this.hunter = hunter;
+    }
+
+    public void setTarget() {
+        this.target = target;
     }
 }

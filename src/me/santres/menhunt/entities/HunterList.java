@@ -4,6 +4,7 @@ import org.bukkit.entity.Player;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.function.Consumer;
 
 public class HunterList {
     private final static Set<Player> hunterList = new HashSet<>();
@@ -18,6 +19,10 @@ public class HunterList {
 
     public static Set<Player> getHunters() {
         return HunterList.hunterList;
+    }
+
+    public static void forEachHunter(Consumer<? super Player> consumer) {
+        hunterList.forEach(consumer);
     }
 
     public static void reset() {

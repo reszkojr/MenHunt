@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bungeecord-chat-1.16-R0.4-javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Libs/bungeecord-chat-1.16-R0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
