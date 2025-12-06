@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="MenHunt:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/MenHunt_jar</output-path>
+    <output-path>$USER_HOME$/serverMC/plugins</output-path>
     <root id="archive" name="MenHunt.jar">
       <element id="module-output" name="MenHunt" />
     </root>
